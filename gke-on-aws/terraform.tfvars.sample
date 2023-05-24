@@ -1,0 +1,25 @@
+gcp_project_id              = "<YOUR GOOGLE PROJECT ID>"
+admin_user                  = "<ANTHOS CLUSTER ADMIN USER EMAIL"
+name_prefix                 = "<YOUR GOOGLE PROJECT ID>"
+node_pool_instance_type     = "t3.large"
+control_plane_instance_type = "t3.large"
+no_of_node_pool             = 1
+cluster_version             = "1.23.8-gke.1700"
+pod_address_cidr_blocks     = ["10.0.4.0/22"]
+service_address_cidr_blocks = ["10.0.8.0/22"]
+max_pods_per_node           = 110
+max_node_count              = 2
+min_node_count              = 1
+size_gib_main_vol_cp        = 40
+size_gib_root_vol_cp        = 30
+size_gib_root_vol_np        = 40
+iops                        = 3000
+volume_type                 = "GP3"
+#--Use 'gcloud container aws get-server-config --location [gcp-region]' to see Availability --
+gcp_location = "asia-south1"
+aws_region   = "ap-south-1"
+tags = {
+  env    = "demo",
+  region = "ap-south-1",
+}
+

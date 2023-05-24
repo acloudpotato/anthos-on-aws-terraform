@@ -1,0 +1,18 @@
+region = "<YOUR AWS VPC REGION>"
+
+vpc_main = {
+  name                     = "<YOUR AWS VPC NAME>",
+  cidr                     = "10.0.0.0/16",
+  azs                      = ["ap-south-1a", "ap-south-1b"],
+  private_subnets          = ["10.0.0.0/24", "10.0.1.0/24", "10.0.3.0/24"],
+  private_subnet_name_tags = ["<YOUR AWS PRIVATE VPC SUBNET NAME>", "<YOUR AWS PRIVATE VPC SUBNET NAME>", "<YOUR AWS PRIVATE VPC SUBNET NAME>"]
+  public_subnets           = ["10.0.2.0/24"]
+  public_subnet_name_tags  = ["<YOUR AWS PUBLIC VPC SUBNET NAME>"]
+
+}
+
+tags = {
+  env    = "demo",
+  region = "ap-south-1",
+}
+
