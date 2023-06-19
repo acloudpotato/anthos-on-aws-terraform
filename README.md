@@ -1,4 +1,4 @@
-# anthos-on-aws-terraform
+# anthos-on-aws-terraform - WIP Document
 
 ## High level Architecture
 Image
@@ -88,12 +88,12 @@ cd anthos-on-aws-terraform/vpc
 
 - backend.tf file - Definition of your terraform code backend, where all the statefiles gonna save
 
-![image](https://user-images.githubusercontent.com/52596897/184918953-0a1d1268-5f61-404f-b8cf-74ae84465930.png)
+sample  image
 
 
 - terraform.tfvars.sample - Definition of values of each variable present in the terraform code,before apply make sure rename the file to terraform.tfvars 
 
-![image](https://user-images.githubusercontent.com/52596897/184919182-15f3b842-84f7-49ff-ade1-65063bca08a2.png)
+sample  image
 
 ## Applying the configuration
 
@@ -119,17 +119,17 @@ cd ../gke-on-aws
 
 - backend.tf file - Definition of your terraform code backend, where all the statefiles gonna save
 
-![image](https://user-images.githubusercontent.com/52596897/184918953-0a1d1268-5f61-404f-b8cf-74ae84465930.png)
+sample  image
 
 
-- data-source.tf file - Definition of your previously created cluster information.
+- data.tf file - Definition of your previously created cluster information.
 
-![image](https://user-images.githubusercontent.com/52596897/184919089-e37f4648-2ef0-46b6-a5dc-fc8acb0a38ec.png)
+sample  image
 
 
 - terraform.tfvars.sample - Definition of values of each variable present in the terraform code,before apply make sure rename the file to terraform.tfvars 
 
-![image](https://user-images.githubusercontent.com/52596897/184919182-15f3b842-84f7-49ff-ade1-65063bca08a2.png)
+sample  image
 
 ## Applying the configuration
 

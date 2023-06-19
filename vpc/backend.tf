@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "demo-platform-tfstate-backend-bucket"
-    prefix = "aws/env/demo/global/vpc"
+    bucket = "<YOUR GCS BUCKET NAME>"
+    prefix = "demo/vpc"
   }
 }
